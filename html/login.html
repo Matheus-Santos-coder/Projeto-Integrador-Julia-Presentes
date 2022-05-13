@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../style/login.css">
+  <link rel="stylesheet" href="../style/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+  <title> Julia Presentes</title>
+</head>
+
+<body class="color">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-expand-md">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../html/index.html">
+          <img src="../IMG/logo/Logo.svg" alt="Imagem  do Logotipo da loja" width="80%" height="80%" />
+        </a>
+        <!--Menu Lista-->
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 btn btn-warning">
+            <li class="nav-item">
+              <a class="text-dark nav-link" href="../html/celular.html">Celular</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="text-dark nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false"> Acessórios </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="../html/cabo.html"> Cabos </a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../html/fone.html"> Fones </a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../html/pelicula.html"> Películas </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="text-dark nav-link" href="../html/contato.html"> Contatos </a>
+            </li>
+            <li class="nav-item">
+              <a class="text-dark nav-link" href="../html/sobre.html">Sobre</a>
+            </li>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+              <button class="btn btn-outline-dark" type="submit"> Pesquisar </button>
+            </form>
+            <li class="nav-item">
+              <a class="text-dark nav-link" href="../IMG/icone/"></a>
+            </li>
+            <li class="nav-item">
+              <a class="text-dark nav-link" href="../html/usuario.html">Login/Cadastro</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-12">
+          <div class="h-100 shadow p-3 bg-body rounded">
+          <div class="form-box">
+            <div class="header-text">
+              Formulário de Login
+            </div><input id="email" placeholder="Seu e-mail" type="text"> <input id="password" placeholder="Sua senha"
+              type="password">
+            <input id="terms" type="checkbox"> <label for="terms"></label><span>Aceito os <a href="#">Termos &
+                Condições</a></span> <button>Login</button>
+          </div>
+</div>
+        </div>
+
+      </div>
+
+
+
+      <script>
+        var email = document.getElementById('email');
+        var password = document.getElementById('password');
+
+        email.addEventListener('focus', () => {
+          email.style.borderColor = "#4A5f6A";
+
+        });
+        password.addEventListener('focus', () => {
+          password.style.borderColor = "#4A5f6A";
+        });
+        email.addEventListener('blur', () => {
+          email.style.borderColor = "#ccc";
+        });
+
+        password.addEventListener('blur', () => {
+          password.style.borderColor = "#ccc";
+        });
+      </script>
+  </main>
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);"> Copyright ©2019 - 2022 Todos os direitos
+    reservados
+  </div>
+  </footer>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+  </script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
