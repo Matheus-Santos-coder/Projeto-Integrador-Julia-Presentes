@@ -40,7 +40,7 @@ textarea {
   /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
-/* Style the submit button with a specific background color etc */
+/* Style the submit button with a specific background color etc 
 
 input[type="submit"] {
   background-color: #04aa6d;
@@ -51,11 +51,12 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
+ When moving the mouse over the submit button, add a darker green color 
 
 input[type="submit"]:hover {
   background-color: #45a049;
 }
+*/
 
 /* Add a background color and some padding around the form */
 
@@ -90,12 +91,6 @@ input[type="submit"]:hover {
   padding: 15px;
   font-size: 15px;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
-}
-
-.card-action:hover {
-  color: #fff;
-  background: #E26D5C;
-  -webkit-animation: pulse 1.5s infinite;
 }
 
 .card-heading {

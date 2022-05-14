@@ -1,42 +1,218 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title> Julia Presentes</title>
-  <link rel="stylesheet" href="../style/rodape.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Julia Presentes </title>
+  <link rel="stylesheet" href="login.css">
   <link rel="stylesheet" href="../style/style.css">
+  <link rel="stylesheet" href="../style/rodape.css">
   <link rel="stylesheet" href="../style/login.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+  <link rel="shortcut icon" href="../IMG/logo/Logo.svg" type="image/x-icon">
 </head>
 
-<body>
-  <main>
+<body class="active">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-expand-md">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../html/index.html">
+          <img src="../IMG/logo/Logo.svg" alt="Imagem  do Logotipo da loja" width="80%" height="80%" />
+        </a>
+        <!--Menu Lista-->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 btn btn-warning">
+            <li class="nav-item">
+              <a class="text-dark nav-link" href="../html/celular.html">Celular</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="text-dark nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Acessórios
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="../html/cabo.html">
+                    Cabos
+                  </a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../html/fone.html">
+                    Fones
+                  </a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../html/pelicula.html">
+                    Películas
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="text-dark nav-link" href="../html/contato.html">
+                Contatos
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="text-dark nav-link" href="../html/sobre.html">Sobre</a>
+            </li>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search" />
+              <button class="btn btn-outline-dark" type="submit">
+                Pesquisar
+              </button>
+            </form>
+            <li class="nav-item">
+              <a class="text-dark nav-link" href="../IMG/icone/"></a>
+            </li>
+            <li class="nav-item">
+              <a class="text-dark nav-link" href="../html/login.html">Login/Cadastro</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <br><br><br>
+  <div class="container">
+    <div class="blueBg">
+      <div class="box signin">
+        <h2> Entrar na conta ?</h2>
+        <button class="signinBtn"> Entrar </button>
+      </div>
+      <div class="box signup">
+        <h2> Não tem uma conta ?</h2>
+        <button class="signupBtn"> Cadastrar </button>
+      </div>
+    </div>
+    <div class="formBx">
+      <div class="form signinForm">
+        <form>
+          <h3> Entrar </h3>
+          <input type="text" placeholder="Nome de Usuário" id="Nome de Usuário">
+          <input type="password" placeholder="Senha" id="Senha">
+          <input type="submit" value="Login" id="Login"> <a href="#" class="forgot"> Esqueci a Senha </a>
+        </form>
+      </div>
+      <div class="form signupForm">
+        <form>
+          <h3> Cadastrar </h3>
+          <input type="text" placeholder="Nome de Usuário" id="Nome de Usuário">
+          <input type="text" placeholder="Endereço de Email" id="Nome de Usuário">
+          <input type="password" placeholder="Senha" id="Senha">
+          <input type="password" placeholder="Confirmar Senha" id=" Confirmar Senha">
+          <input type="submit" value="Cadastrar" id="Cadastrar">
+        </form>
+      </div>
+    </div>
+  </div>
 
-    <!--<script>
-        var email = document.getElementById('email');
-        var password = document.getElementById('password');
-
-        email.addEventListener('focus',()=>{
-            email.style.borderColor = "#4A5f6A";
-        
-        });
-        password.addEventListener('focus',()=>{
-          password.style.borderColor = "#4A5f6A";
-        });
-        email.addEventListener('blur',()=>{
-         email.style.borderColor = "#ccc";
-        });
-
-        password.addEventListener('blur',()=>{
-         password.style.borderColor = "#ccc";
-        });
-    </script> -->
-    <br /><br /><br /><br /><br /><br /><br />
-  </main>
+  <script src="login.js"></script>
 
 
+
+  <!--Rodapé--><br /><br /><br /><br /><br /><br /><br />
+  <footer class="text-center text-lg-start text-white">
+    <div class="">
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+      <div>
+        <ul class="social_icon">
+          <li>
+            <a href="#">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+          </li>
+        </ul>
+        <div class="container text-center text-md-start mt-5">
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4"> Julia Presentes </h6>
+              <p>
+                Loja há mais de 17 anos em Taquaritinga, com os melhores
+                produtos, preços e satisfação garantida, credibilidade e
+                confiança você encontra aqui.
+              </p>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Produtos</h6>
+              <p>
+                <a href="../html/celular.html" class="text-reset">
+                  Celular
+                </a>
+              </p>
+              <p>
+                <a href="../html/cabo.html" class="text-reset"> Cabos </a>
+              </p>
+              <p>
+                <a href="../html/fone.html" class="text-reset"> Fones </a>
+              </p>
+              <p>
+                <a href="../html/pelicula.html" class="text-reset">
+                  Películas
+                </a>
+              </p>
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Contatos</h6>
+              <p>
+                <i class="fas fa-home me-3">
+                  Rua Prudente De Moraes, nº 449 - Centro Taquaritinga SP
+                </i>
+              </p>
+              <p>
+                <i class="fas fa-envelope me-3">
+                  julia_presentes@gmail.com
+                </i>
+              </p>
+              <p><i class="fas fa-phone me-3"> (16)99201-3279 </i></p>
+            </div>
+          </div>
+        </div>
+        <!-- Copyright -->
+        <p class="copyright">
+          Copyright ©2019 - 2022 | Todos os direitos reservados
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+  </script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
 </body>
 
 </html>
